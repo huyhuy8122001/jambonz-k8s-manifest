@@ -32,7 +32,7 @@ spec:
           name: db-create-wait
       containers:
         - name: drachtio
-          image: drachtio/drachtio-server:latest
+          image: drachtio/drachtio-server:0.8.24
           args: ['drachtio', '--loglevel', 'info', '--cloud-deployment', '--sofia-loglevel', '3', '--homer', 'heplify-server.jambonz-monitoring:9060', '--homer-id', '10']
           envFrom:
             - configMapRef:
@@ -58,7 +58,7 @@ spec:
               name: jambonz-sbc-sip-conf
               subPath: drachtio.conf.xml
         - name: sbc-options-handler
-          image: jambonz/sbc-options-handler:main
+          image: jambonz/sbc-options-handler:latest
           imagePullPolicy: Always 
           envFrom:
             - configMapRef:

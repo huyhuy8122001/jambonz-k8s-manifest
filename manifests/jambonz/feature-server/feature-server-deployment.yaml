@@ -24,7 +24,7 @@ spec:
           name: db-create-wait
       containers:
         - name: drachtio
-          image: drachtio/drachtio-server:k8s
+          image: drachtio/drachtio-server:0.8.24
           imagePullPolicy: Always
           lifecycle:
             preStop:
@@ -38,7 +38,7 @@ spec:
           ports:
             - containerPort: 9022
         - name: freeswitch
-          image: drachtio/drachtio-freeswitch-mrf:1.10.5
+          image: drachtio/drachtio-freeswitch-mrf:0.5.6
           lifecycle:
             preStop:
               exec:

@@ -19,7 +19,9 @@ spec:
         kubernetes.io/arch: amd64
       containers:
         - env:
-            - name: REACT_APP_API_BASE_URL
+            - name: VITE_API_BASE_URL
+              value: http://27.66.108.252:3000/v1
+            - name: VITE_DEV_BASE_URL
               value: http://27.66.108.252:3000/v1
             - name: NODE_OPTIONS
               value: '--openssl-legacy-provider'

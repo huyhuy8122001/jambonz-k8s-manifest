@@ -24,7 +24,7 @@ spec:
           effect: "NoSchedule"
       containers:
         - name: rtpengine-sidecar
-          image: jambonz/rtpengine-sidecar:k8s
+          image: jambonz/rtpengine:0.1.6
           imagePullPolicy: Always
           envFrom:
             - configMapRef:

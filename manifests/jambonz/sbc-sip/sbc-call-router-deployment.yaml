@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sbc-call-router
-          image: jambonz/sbc-call-router:latest
+          image: jambonz/sbc-call-router:0.8.5
           imagePullPolicy: Always 
           envFrom:
             - configMapRef:
