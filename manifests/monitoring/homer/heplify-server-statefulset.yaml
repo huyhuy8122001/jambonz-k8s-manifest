@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: heplify-server
-          image: sipcapture/heplify-server:master
+          image: sipcapture/heplify-server
           args: ['./heplify-server', '-config', '/etc/heplify-server.toml']
           ports:
             - containerPort: 9060
