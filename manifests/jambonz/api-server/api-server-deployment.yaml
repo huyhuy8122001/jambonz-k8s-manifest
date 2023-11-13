@@ -27,7 +27,7 @@ spec:
           name: db-create-wait
       containers:
         - name: api-server
-          image: jambonz/jambonz-api-server:latest
+          image: jambonz/api-server:0.8.5
           envFrom:
             - configMapRef:
                 name: jambonz-env
