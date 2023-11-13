@@ -3,7 +3,19 @@ kind: Ingress
 metadata:
   name: grafana
   namespace: jambonz-monitoring
+  annotations:
+    konghq.com/use-regex: "true"
+    konghq.com/preserve-host: "true"
+    konghq.com/strip-path: "true"
+    konghq.com/request-buffering: "true"
+    konghq.com/response-buffering: "true"
+    # konghq.com/connect-timeout: "6000"
+    # konghq.com/read-timeout: "6000"
+    # konghq.com/write-timeout: "6000"
+    # konghq.com/rewrite-target: /$2
+    #konghq.com/plugins: auth
 spec:
+  ingressClassName: kong
   rules:
     - host: cpaas-grafana.epacific.net
       http:
