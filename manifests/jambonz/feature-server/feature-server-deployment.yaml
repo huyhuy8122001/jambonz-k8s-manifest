@@ -53,7 +53,7 @@ spec:
           ports:
             - containerPort: 8081
         - name: feature-server 
-          image: feature-server:0.8.5-rc20
+          image: jambonz/feature-server:0.8.5-rc20
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
