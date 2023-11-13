@@ -20,7 +20,7 @@ spec:
       containers:
         - env:
             - name: REACT_APP_API_BASE_URL
-              value: http://api.k8s-gcp.jambonz.org/v1
+              value: http://27.66.108.252:3000/v1
             - name: NODE_OPTIONS
               value: '--openssl-legacy-provider'
           image: jambonz/webapp:latest
