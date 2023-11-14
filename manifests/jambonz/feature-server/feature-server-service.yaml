@@ -9,7 +9,7 @@ spec:
   ports:
     - name: sip
       port: 5060
-      protocol: UDP
+      protocol: TCP
       targetPort: 5060
     - name: http
       port: 3000
